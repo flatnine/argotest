@@ -12,10 +12,10 @@ spec:
   project: default
   source:
     chart: metrics-server
-    #helm: 
-    #  values: | 
-    #    pushgateway:
-    #      enabled: false  
+    helm: 
+      values: | 
+        apiService:
+          insecureSkipTLSVerify: true
     repoURL: https://charts.bitnami.com/bitnami
     targetRevision: 6.2.0
   syncPolicy:
