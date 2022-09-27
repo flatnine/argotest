@@ -16,6 +16,8 @@ spec:
       values: | 
         apiService:
           insecureSkipTLSVerify: true
+        extraArgs:
+        - "--kubelet-insecure-tls"
     repoURL: https://charts.bitnami.com/bitnami
     targetRevision: 6.2.0
   syncPolicy:
